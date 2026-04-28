@@ -1,0 +1,29 @@
+{
+  "name": "@codexteam/deeplinker",
+  "version": "1.1.1",
+  "description": "Tiny script that helps you to use one link to open web pages or installed apps",
+  "keywords": [
+    "deeplink",
+    "scheme",
+    "protocol",
+    "electron",
+    "app"
+  ],
+  "main": "dist/deeplinker.js",
+  "scripts": {
+    "build": "webpack -o dist/deeplinker.js --verbose --mode production --output-library deeplinker --output-library-target umd"
+  },
+  "author": {
+    "name": "Taly Guryn",
+    "url": "https://github.com/talyguryn"
+  },
+  "homepage": "https://github.com/codex-team/deeplinker",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^2.1.2"
+  }
+}
