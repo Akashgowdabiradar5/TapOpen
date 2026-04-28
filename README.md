@@ -1,16 +1,26 @@
-# React + Vite
+🚀 TapOpen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TapOpen is a lightweight solution that ensures links open directly in their native mobile apps instead of a web browser. This improves user experience by eliminating unnecessary redirects and leveraging installed apps like Instagram, YouTube, Twitter, etc.
 
-Currently, two official plugins are available:
+📌 Problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+When users click links (e.g., Instagram posts), they often open in a browser instead of the native app, even if the app is installed. This leads to:
 
-## React Compiler
+ 1.Poor user experience 😕
+ 2.Extra login steps
+ 3.Limited app functionality
+💡 Solution
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TapOpen detects supported links and intelligently redirects them to their corresponding native apps using deep linking.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Features
+🔗 Open links directly in native apps
+⚡ Fast redirection with minimal delay
+📱 Supports popular platforms (Instagram, YouTube, Twitter, etc.)
+🧠 Smart fallback to browser if app is not installed
+🛠️ Easy to integrate
+🏗️ How It Works
+User clicks a link
+TapOpen checks if a native app is available
+If yes → opens the app using deep link
+If not → falls back to web browser
